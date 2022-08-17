@@ -4,15 +4,15 @@ import ProductData from "./ProductData";
 export default function App() {
   return (
     <div className="App">
-      {ProductData.map((datas) => (
+      {ProductData.map((contents) => (
         <Product
-          key={datas.id}
-          image={datas.image}
-          name={datas.name}
-          price={datas.price}
-          totalSales={datas.totalsales}
-          timeLeft={datas.timeLeft}
-          rating={datas.rating}
+          key={contents.id}
+          image={contents.image}
+          name={contents.name}
+          price={contents.price}
+          totalSales={contents.totalSales}
+          timeLeft={contents.timeLeft}
+          rating={contents.rating}
         />
       ))}
     </div>
