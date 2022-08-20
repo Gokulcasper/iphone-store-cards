@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 const CreateMobile = () => {
     const [mobile, setMobile] = useState({
         name: "",
-        description: "",
+        descriptions: "",
         image_url: "",
     });
 
@@ -25,7 +25,7 @@ const CreateMobile = () => {
                 }} />
             </div>
             <div className='flex items-center justify-start gap-x-3'>
-                <h3>Description :</h3>
+                <h3>Descriptions :</h3>
                 <input type="text" value={mobile.description} onChange={(e) => {
                     setMobile({ ...mobile, description: e.target.value })
                 }} />
